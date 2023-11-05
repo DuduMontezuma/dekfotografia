@@ -1,0 +1,552 @@
+/*Tela de celular*/
+@media  screen and (max-width: 480px) {
+
+    /* Menu */
+    .container{
+        height: 300px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7) 100%,
+            rgba(20, 20, 20, 1) 50%
+        ),
+        url(../img/eventos/livia04.jpg);
+        background-size: cover;
+        padding: 0;
+    }
+
+    .hero {
+        margin: 0;
+        padding-left: 20px;
+        margin-bottom: 100px;
+    }
+
+    .header{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .logo img {
+        width: 150px;
+        position: absolute;
+        left: 100px;
+        z-index: 1;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        z-index: 2;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: 3px, solid, #e5e5e5;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        position: absolute;
+        text-align: left;
+        top: 160px;
+        padding-bottom: 1rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        list-style: none;
+    }
+
+    .mobile-menu ul a{
+        text-decoration: none;
+    }
+
+    .mobile-menu ul li {
+        text-decoration: none;
+        color: #e5e5e5;
+        font-size: 40px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+
+    /*Estrutura das imagens*/
+
+    .category{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 50px;
+        z-index: 0;
+    }
+    
+    .category span{
+        color: #e5e5e5;
+        font-size: 30px;
+        line-height: 17px;
+        font-weight: 500;
+        margin-left: 50px;
+    }
+
+    .category .slider .image{
+        display: flex;
+    }
+    .category .slider2 .image{
+        display: flex;
+    }
+
+    .category .slider,
+    .category .slider2{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        right: 0;
+    }
+
+    .category .image img{
+        width: 250px;
+    }
+    
+    .footer .info span {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .footer .social a i{
+        position: relative;
+        font-size: 56px;
+        z-index: 1;
+        bottom: 20px;
+    }
+
+    .social {
+        margin-bottom: 10px;
+    }
+
+    /*----------------------------------------------------------------------------------*/
+
+    /*PÁGINA DE CONTATO*/
+
+    .formulario {
+        position: relative;
+        margin-top: 0;
+        top: 0;
+        padding: 0;
+        z-index: 0;
+    }
+
+    .formulario .box {
+        width: 400px;
+        right: 0;
+        margin-left: 8px;
+    }
+
+    #enviar {
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+/*Dispositivos com telas pequenas*/
+@media  screen and (min-width: 481px) and (max-width: 767px) {
+
+    /*MENU*/
+    
+    .menu-left{
+        font-size: 25px;
+    }
+
+    /*Trabalhando o carossel*/
+    
+    .category{
+        height: 200px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        z-index: 0;
+    }
+
+    .category span{
+        color: #e5e5e5;
+        font-size: 40px;
+        line-height: 17px;
+        font-weight: 500;
+        margin-left: 50px;
+    }
+
+    .category .slider .image,
+    .category .slider2 .image{
+        display: flex;
+    }
+
+    .category .slider,
+    .category .slider2{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        right: 0;
+        left: 51px
+    }
+
+    .category .image img{
+        width: 250px;
+    }
+
+    /*FOOTER*/
+
+    .footer .info span {
+        font-size: 26px;
+        width: 400px;
+    }
+
+    .footer .info{
+        width: 400px;
+    }
+
+    .footer .social a i{
+        position: relative;
+        font-size: 56px;
+        z-index: 1;
+        bottom: 10px;
+    }
+
+    .social {
+        margin-bottom: 10px;
+    }
+
+    /*------------------------------------------------------------------------------------------*/
+    
+    .btn-left,
+    .btn-right {
+        display: block;
+        background-color: #f8f7f763;
+        z-index: 1;
+        text-align: center;
+        line-height: 180px;
+        height: 160px;
+        width: 50px;
+        position: absolute;
+        padding: 0;
+        cursor: pointer;
+        user-select: none;
+        margin-top: 14px;
+    }
+
+    .btn-left{
+        left: 0;
+    }
+
+    .btn-right{
+        right: 0;
+    }
+
+    .footer .flex  {
+        flex-direction: row;
+    }
+
+
+    /*Formulário*/
+    .formulario {
+        position: relative;
+        margin-top: 0;
+        top: 0;
+        padding: 0;
+        z-index: 0;
+    }
+
+    .formulario .box{
+        top: 0;
+    }
+
+    #enviar {
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    /*FOOTER*/
+    .footer .info span {
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        width: 200px;
+    }
+    
+}
+
+/*Tablets*/
+@media  screen and (min-width: 768px) and (max-width: 991px) {
+
+    /*MENU*/
+    
+    .menu-left{
+        font-size: 30px;
+    }
+    
+     /*Trabalhando o carossel*/
+    
+     .category{
+        height: 200px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        z-index: 0;
+    }
+
+    .category span{
+        color: #e5e5e5;
+        font-size: 40px;
+        line-height: 17px;
+        font-weight: 500;
+        margin-left: 50px;
+    }
+
+    .category .slider .image,
+    .category .slider2 .image{
+        display: flex;
+    }
+
+    .category .slider,
+    .category .slider2{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        right: 0;
+        left: 51px
+    }
+
+    .category .image img{
+        width: 250px;
+    }
+
+    /*------------------------------------------------------------------------------------------*/
+    
+    .btn-left,
+    .btn-right {
+        display: block;
+        background-color: #f8f7f763;
+        z-index: 1;
+        text-align: center;
+        line-height: 180px;
+        height: 160px;
+        width: 50px;
+        position: absolute;
+        padding: 0;
+        cursor: pointer;
+        user-select: none;
+        margin-top: 14px;
+    }
+
+    .btn-left{
+        left: 0;
+    }
+
+    .btn-right{
+        right: 0;
+    }
+
+    /*FORMULARIO*/
+
+    .formulario .box {
+        width: 600px;
+    }
+
+    #enviar {
+        width: 100px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+       /*FOOTER*/
+       .footer .info span {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .footer .social a i{
+        position: relative;
+        font-size: 54px;
+        z-index: 1;
+        bottom: 20px;
+    }
+}
+
+/*Telas maiores*/
+@media  screen and (min-width: 1920px) {
+
+     /*MENU*/
+    
+     .menu-left{
+        font-size: 70px;
+        padding-left: 40px;
+    }
+
+    .menu-left ul a {
+        padding-left: 20px;
+    }
+
+    .logo img {
+        width: 300px;
+    }
+
+         /*Trabalhando o carossel*/
+    
+         .category{
+            height: 500px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            z-index: 0;
+        }
+    
+        .category span{
+            color: #e5e5e5;
+            font-size: 100px;
+            line-height: 17px;
+            font-weight: 500;
+            margin-left: 50px;
+        }
+    
+        .category .slider .image,
+        .category .slider2 .image{
+            display: flex;
+        }
+    
+        .category .slider,
+        .category .slider2{
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+            right: 0;
+            left: 51px
+        }
+    
+        .category .image img{
+            width: 650px;
+        }
+    
+        /*------------------------------------------------------------------------------------------*/
+        
+        .btn-left,
+        .btn-right {
+            display: block;
+            background-color: #0707075d;
+            z-index: 1;
+            text-align: center;
+            line-height: 180px;
+            height: 430px;
+            width:200px;
+            position: absolute;
+            padding: 0;
+            padding-top: 135px;
+            cursor: pointer;
+            user-select: none;
+            margin-top: 14px;
+            font-size: 150px;
+            color: #ffffff6b;
+        }
+    
+        .btn-left{
+            left: 0;
+        }
+    
+        .btn-right{
+            right: 0;
+        }
+
+        /*FOOTER*/
+       .footer .info span {
+            display: flex;
+            flex-direction: row;
+            font-size: 50px;
+            width: 800px;
+            height: 200px;
+        }
+
+        .footer .social a i{
+            position: relative;
+            font-size: 144px;
+            z-index: 1;
+            bottom: 20px;
+            width: 200px;
+        }
+
+        .footer .info {
+            width: 500px;
+        }
+
+    /*FORMULARIO*/
+
+    .formulario .box {
+        width: 1500px;
+        height: 800px;
+        margin-top: 200px;
+    }
+
+    .box div h2{
+        font-size: 50px;
+    }
+
+    #cNome{
+        position: relative;
+        max-width: 50%;
+        font-size: 50px;
+    }
+
+    #cEmail {
+        font-size: 50px;
+    }
+    
+    #cText {
+        position: relative;
+        max-width: 90%;
+        height: 300px;
+        border-radius: 5px;
+        font-size: 50px;
+    }
+    
+    .box form{
+        margin: auto;
+    }
+    
+    #message {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #message label{
+        margin-bottom: 3px;
+    }
+
+    #contato div label {
+        font-size: 50px;
+    }
+
+    #enviar {
+        width: 170px;
+        height: 50px;
+        font-size: 25px;
+    }
+    
+}

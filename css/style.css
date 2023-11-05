@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: arial;
+    background-color: black;
+}
+
+.container{
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.2) 20%,
+        rgba(20, 20, 20, 0.2) 80%,
+        rgba(20, 20, 20, 1) 100%
+    ),
+    url(../img/eventos/livia04.jpg);
+    background-size: cover;
+    padding: 0.26rem 0.75rem 0 0.75rem;
+}
+
+.hero {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 8.8rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.menu-left{
+    display: flex;
+    color: white;
+    font-size: .87rem;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu ul li {
+    padding-right: .9rem;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+
+/*------------------------------------------------*/
+.category{
+    height: 200px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.category span{
+    color: #e5e5e5;
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: 600;
+    left: 100px;
+}
+
+.btn-left, 
+.btn-right {
+    display: none;
+}
+
+.slider, .slider2{
+    margin-top: .8rem;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    left: 3.75rem;
+    right: 50px;
+    z-index: 0;
+}
+
+.slider .image:hover,
+.slider .image:hover {
+    overflow: visible;
+}
+
+.slider .image img, 
+.slider2 .image img{
+    width: 100%;
+    padding-right: 5px;
+}
+
+.slider .image img:hover,
+.slider2 .image img:hover{
+    width: 120%;
+    position: relative;
+    box-shadow:5px 5px rgba(2, 2, 2, 0.1);
+    padding-right: 0;
+    border-radius: 3%;
+} 
+
+
+
+/*---------------------------------------------------------------------------------------*/
+
+
+.footer{
+    display: flex;
+    margin: 20px auto 0;
+    width: 80%;
+    color: #808080;
+    height: 80px;
+    padding-top: 25px;
+}
+
+.footer .social i {
+    padding: 10px;
+    font-size: 26px;
+}
+
+.flex{
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.footer .info{
+    width: 25%;
+}
+
+.footer .info span {
+    list-style: none;
+    display: inline;
+    font-size: 12px;
+}
+
+.footer .info ul li{
+    margin-top: 8px;
+}
+
+
+/*PÁGINA DE CONTATO*/
+
+.formulario{
+    width: 90%;
+    position: absolute;
+    top: 150px;
+    color: #e5e5e5;
+    padding-left: 20px;
+}
+
+.formulario .box {
+    width: 60%;
+    padding: 20px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+}
+
+#cNome{
+    position: relative;
+    max-width: 50%;
+}
+
+#cText {
+    position: relative;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.box form{
+    margin: auto;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+}
+
+#message label{
+    margin-bottom: 3px;
+}
+
+#enviar{
+    width: 10%;
+    height: 30px;
+    background-color: #808080;
+    color: white;
+    border-radius: 5%;
+}
+
+#enviar:hover {
+    background-color: #adabab;
+}

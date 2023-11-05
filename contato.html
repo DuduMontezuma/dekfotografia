@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/query.css" type="text/css">
+    <title>D&K Fotografia - Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+    <!--Menu da página-->
+    <div class="container">
+
+        <!--Inicio do Hero-->
+        <div class="hero">
+
+            <!--Inicio do header-->
+            <div class="header">
+
+                 <!--Menu Responsivo-->
+                 <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img src="img/menu_white_36dp.svg" alt="" class="icon"></button>
+                </div>
+
+                <!--logo-->
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+
+                <!--menu-->
+                <div class="menu">
+
+                    <!--menu left-->
+                    <div class="menu-left">
+                        <ul>
+                            <a href="index.html #footer"><li>Fotos</li></a>
+                            <a href="contato.html"><li>Contato</li></a>
+                        </ul>
+                    </div> <!--fim do menu left-->
+                </div>
+
+            </div> <!--fecha o menu-->
+
+            <div class="mobile-menu">
+                <ul>
+                    <a href="#footer"><li>Fotos</li></a>
+                    <a href="contato.html"><li>Contato</li></a>
+                </ul>
+            </div>
+        </div> <!--Fecha header-->
+
+
+
+        <!--Formulário de Contato-->
+        <div class="formulario">
+            <div class="box">
+                <div>
+                    <h2>IDENTIFICAÇÃO DE USUÁRIO</h2>
+                </div>
+                <form method="post" id="contato" action="http://formsubmit.co/dekfotografia9@gmail.com">
+                    <div>
+                        <label for="tNome">Nome Completo:</label> 
+                        <input type="text" name="tNome" id="cNome" size="40" maxlength="40" required>
+                    </div>
+
+                    <br><br>
+
+                    <div>
+                        <label for="tEmail">Email:</label> 
+                        <input type="email" name="tEmail" id="cEmail" size="25" required >
+                    </div>
+
+                    <br><br>
+
+                    <div id="message">
+                        <label for="tText">Mensagem</label>
+                        <textarea name="tText" id="cText" cols="80" rows="10"></textarea>
+                    </div>
+
+                    <br><br>
+
+                    <div>
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <!--Footer-->
+        <div class="footer" id="footer">
+            <div class="social">
+                <!--<a href="http://instagram.com.br/dk_fotografiaa" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #969696;"></i></a>-->
+                <a href="http://instagram.com.br/dk_fotografiaa" target="_blank"><i class="fa-brands fa-instagram" style="color: #969696;"></i></a>
+            </div> <!--Fechamento sociais-->
+
+            <div class="flex">
+                <div class="info">
+                    <span>&#174 D&K Fotografia</span>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
