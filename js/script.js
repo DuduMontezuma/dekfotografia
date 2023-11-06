@@ -23,6 +23,9 @@ function direcao(e){
     }
 }
 
+
+
+
 function direcao2(e){
     var direcao2 = document.querySelector(".slider2")
 
