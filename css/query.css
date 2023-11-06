@@ -113,6 +113,15 @@
         right: 0;
     }
 
+    .slider .image img:hover,
+    .slider2 .image img:hover{
+        width: 100%;
+        position: relative;
+        box-shadow:5px 5px rgba(2, 2, 2, 0.1);
+        padding-right: 5;
+        border-radius: 3%;
+    } 
+
     .category .image img{
         width: 250px;
     }
@@ -142,13 +151,15 @@
     .formulario {
         position: relative;
         margin-top: 0;
+        margin-right: 0;
+        padding-right: 0;
         top: 0;
         padding: 0;
         z-index: 0;
     }
 
     .formulario .box {
-        width: 400px;
+        width: 350px;
         right: 0;
         margin-left: 8px;
     }
